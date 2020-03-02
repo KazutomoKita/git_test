@@ -16,30 +16,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     
-    var pepe:Bool = true
+    var pepe:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "FOALS"
+        label.text = "FOALS / Holy Fire"
         // Do any additional setup after loading the view.
         
     }
     
     @IBAction func tappedButton(_ sender: Any) {
-        
-        if pepe == true {
+        if pepe == 0 {
             imageView.image = UIImage(named: "KASABIAN")
-            label.text = "KASABIAN"
-            pepe = false
+            label.text = "KASABIAN / KASABIAN"
+            pepe = 1
+        } else if pepe == 1 {
+            imageView.image = UIImage(named: "National")
+            label.text = "The National / I Am Easy to Find"
+            pepe = 2
         } else {
             imageView.image = UIImage(named: "FOALS")
-            label.text = "FOALS"
-            pepe = true
+            label.text = "FOALS / Holy Fire"
+            pepe = 0
         }
-        
     }
-    
-
-
 }
 
