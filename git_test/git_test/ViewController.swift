@@ -30,10 +30,12 @@ class ViewController: UIViewController {
             imageView.image = UIImage(named: "KASABIAN")
             label.text = "KASABIAN / KASABIAN"
             pepe = 1
+            /*
         } else if pepe == 1 {
             imageView.image = UIImage(named: "National")
             label.text = "The National / I Am Easy to Find"
             pepe = 2
+        */
         } else {
             imageView.image = UIImage(named: "FOALS")
             label.text = "FOALS / Holy Fire"
