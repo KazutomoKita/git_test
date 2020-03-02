@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var label2: UILabel!
+
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        label.text = "カサビアンが見たい"
-        label2.text = "おーーーちんちん"
     }
+    
+    @IBAction func tappedButton(_ sender: Any) {
+        imageView.image = UIImage(named: "KASABIAN")
+    }
+    
 
 
 }
