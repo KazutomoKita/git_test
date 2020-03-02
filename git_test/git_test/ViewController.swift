@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var button: UIButton!
     
+    var pepe:Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,7 +23,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tappedButton(_ sender: Any) {
-        imageView.image = UIImage(named: "KASABIAN")
+        
+        if pepe == true {
+            imageView.image = UIImage(named: "KASABIAN")
+            pepe = false
+        } else {
+            imageView.image = UIImage(named: "FOALS")
+            pepe = true
+        }
+        
     }
     
 
