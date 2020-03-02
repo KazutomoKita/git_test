@@ -13,11 +13,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var label: UILabel!
+    
     
     var pepe:Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        label.text = "FOALS"
         // Do any additional setup after loading the view.
         
     }
@@ -26,9 +29,11 @@ class ViewController: UIViewController {
         
         if pepe == true {
             imageView.image = UIImage(named: "KASABIAN")
+            label.text = "KASABIAN"
             pepe = false
         } else {
             imageView.image = UIImage(named: "FOALS")
+            label.text = "FOALS"
             pepe = true
         }
         

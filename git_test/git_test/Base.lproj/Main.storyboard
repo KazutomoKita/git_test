@@ -15,13 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FOALS" translatesAutoresizingMaskIntoConstraints="NO" id="r72-Uh-ctn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FOALS" translatesAutoresizingMaskIntoConstraints="NO" id="r72-Uh-ctn">
                                 <rect key="frame" x="82" y="76" width="250" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r72-Uh-ctn" secondAttribute="height" multiplier="1:1" id="qxO-ob-BbL"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2X-6a-feM">
-                                <rect key="frame" x="184" y="389" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3V-vQ-7HN">
+                                <rect key="frame" x="82" y="385" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="fqg-Io-AYt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2X-6a-feM">
+                                <rect key="frame" x="184" y="456" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uy6-T6-FOu"/>
@@ -29,11 +39,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r72-Uh-ctn" secondAttribute="trailing" constant="82" id="2rG-SD-Ark"/>
+                            <constraint firstItem="G2X-6a-feM" firstAttribute="top" secondItem="r3V-vQ-7HN" secondAttribute="bottom" constant="50" id="4T8-zb-bkI"/>
+                            <constraint firstItem="r72-Uh-ctn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="528-UZ-8hy"/>
+                            <constraint firstItem="r72-Uh-ctn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="Aw2-wn-Abp"/>
+                            <constraint firstItem="G2X-6a-feM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="D9b-T1-8PP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G2X-6a-feM" secondAttribute="bottom" constant="376" id="XcA-tF-QZf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G2X-6a-feM" secondAttribute="trailing" constant="184" id="g2d-rR-H6i"/>
+                            <constraint firstItem="r3V-vQ-7HN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="juo-mJ-lBr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r3V-vQ-7HN" secondAttribute="trailing" constant="82" id="lbY-YB-erf"/>
+                            <constraint firstItem="r3V-vQ-7HN" firstAttribute="top" secondItem="r72-Uh-ctn" secondAttribute="bottom" constant="59" id="wP4-AG-09t"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="G2X-6a-feM" id="yXb-4b-pz9"/>
                         <outlet property="imageView" destination="r72-Uh-ctn" id="o4S-Ky-4KR"/>
+                        <outlet property="label" destination="r3V-vQ-7HN" id="gZ4-x1-aKr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
