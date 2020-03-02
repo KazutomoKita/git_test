@@ -21,18 +21,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcZ-fu-Tde">
+                                <rect key="frame" x="107" y="438" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="v8q-EN-sVC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="XcZ-fu-Tde" firstAttribute="top" secondItem="txR-Ye-v1g" secondAttribute="bottom" constant="52" id="0QH-RI-ZbE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="txR-Ye-v1g" secondAttribute="trailing" constant="132" id="Rai-ee-tYr"/>
                             <constraint firstItem="txR-Ye-v1g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Sog-A3-k5t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XcZ-fu-Tde" secondAttribute="bottom" constant="403" id="Wwy-GL-8Xb"/>
+                            <constraint firstItem="XcZ-fu-Tde" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="gjm-PP-RMY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="txR-Ye-v1g" secondAttribute="bottom" constant="476" id="rFb-fd-FWd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XcZ-fu-Tde" secondAttribute="trailing" constant="107" id="uxN-p7-Lha"/>
                             <constraint firstItem="txR-Ye-v1g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="321" id="wy0-cH-Y9e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="txR-Ye-v1g" id="roe-7u-O4L"/>
+                        <outlet property="label2" destination="XcZ-fu-Tde" id="Pc2-w3-0QV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

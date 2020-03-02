@@ -11,12 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         label.text = "カサビアンが見たい"
+        label2.text = "あもんふああああああああああああああ"
     }
 
 
