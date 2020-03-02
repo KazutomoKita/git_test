@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "FOALS"
+        label.text = "FOALS / Holy Fire"
         // Do any additional setup after loading the view.
         
     }
@@ -29,11 +29,11 @@ class ViewController: UIViewController {
         
         if pepe == true {
             imageView.image = UIImage(named: "KASABIAN")
-            label.text = "KASABIAN"
+            label.text = "KASABIAN / KASABIAN"
             pepe = false
         } else {
             imageView.image = UIImage(named: "FOALS")
-            label.text = "FOALS"
+            label.text = "FOALS / Holy Fire"
             pepe = true
         }
         
