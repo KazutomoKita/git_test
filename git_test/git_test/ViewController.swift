@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             
         } else if pepe == 2 {
             imageView.image = UIImage(named: "Tame_Impala")
-            label.text = "Tame Impalaaaaaaaaaa / The Slow Rush"
+            label.text = "Tame Impala / The Slow Rush"
             pepe = 3
         
         } else {
