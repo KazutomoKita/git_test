@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             
         } else if pepe == 1 {
             imageView.image = UIImage(named: "National")
-            label.text = "The National / I Am Easy to Find(2019)"
+            label.text = "The National / I Am Easy to Find"
             pepe = 2
             
         } else if pepe == 2 {
