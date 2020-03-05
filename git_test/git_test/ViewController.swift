@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBAction func tappedButton(_ sender: Any) {
         if pepe == 0 {
             imageView.image = UIImage(named: "KASABIAN")
-            label.text = "KASABIAN / KASABIAN(Self Title Album)"
+            label.text = "KASABIAN / KASABIAN"
             pepe = 1
             
         } else if pepe == 1 {
